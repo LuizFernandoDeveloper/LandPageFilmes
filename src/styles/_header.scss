@@ -1,0 +1,152 @@
+@use 'config/color.scss';
+
+.header{
+    max-width: 100vw;
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+
+    @media(max-width: 768px){
+        display: block;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    @media(max-width: 481px){
+        display: flex;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    &__container__logo{
+        max-width: 150px;
+        width: 100%;
+
+        @media(max-width: 1279px){
+            max-width: 120px;
+        }
+
+        @media(max-width: 768px){
+            margin: 0 auto;
+        }
+
+        h1{
+            font-family: 'Inter', sans-serif;
+            font-size: 28px;
+            color: color.$colorText;
+
+            @media(max-width: 10279px){
+                font-size: 24px;
+                height: 100%;
+                padding-top: calc((38px - 26px)/2);
+            }
+        }
+    }
+
+    &__nav{
+        max-width: calc(100vw - 170px);
+        width: 100%; 
+        display: flex;
+        justify-content: space-between;
+        padding-left: 130px;
+
+        @media(max-width: 1024px){
+            padding-left: 40px;
+        }
+
+        @media(max-width: 768px){
+            max-width: 90vw;
+            padding-left: 10px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        @media(max-width: 481px){
+            display: none;
+        }
+
+        &__a{
+            padding-top: calc((38px - 28px)/2);
+            padding-left: 5px;
+            padding-right: 5px;
+            text-decoration: none;
+            color: color.$colorLinkText;
+            display: block;
+            width: auto;
+            height: 100%;
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 50;
+            border-radius: 5px;
+            margin-right: 10px;
+            height: 38px;
+
+            &:hover{
+                background-color: rgb(50, 52, 52);
+            }
+
+            &--is--active{
+                background-color: color.$colorLinkbackgroundActive;
+            }
+
+            @media(max-width: 1024px){
+                padding-top: calc((38px - 18px)/2);
+                font-size: 18px;
+                margin: 0;
+            }
+
+            @media(max-width: 768px){
+                font-size: 12px;
+                font-weight: 400;
+                height: 25px;
+                padding-top: calc((25px - 11px)/2);
+            }
+        }
+    }
+
+    &__nav__mobile{
+        max-width: calc(100vw - 150px);
+        width: 100%;
+        text-align: right;
+        padding-right: 30px;
+        display: none;
+        
+        @media(max-width: 481px){
+            display: initial;
+        }
+        
+        button{
+            background-color: transparent;
+            border: none;
+            width: 38px;
+            height: 40px;
+            margin-left: 30px;
+            img{
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        }
+
+        &--is--open{
+            display: block;
+            max-width: 100vw;
+            margin-top:40px;
+            position: absolute;
+            padding: 10px 15px;
+            background-color: rgb(23, 61, 186);
+            border-radius: 0 15px 15px 0;
+            .header__nav__a{
+                background-color: rgb(12, 12, 12);
+                margin-top: 10px;
+                font-size: 20px;
+                padding-top: calc((25px - 20px)/2);
+                padding-left: 5px;
+            }
+        }
+
+        &--is--closed{
+            display: none;
+        }
+    }
+}

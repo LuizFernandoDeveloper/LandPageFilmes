@@ -1,0 +1,81 @@
+@use 'config/fontes.scss';
+@use 'config/color.scss';
+@use 'config/reset.scss';
+@use '_header';
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+    box-sizing: border-box; //propriedade responsavel por manter o tamanho da div ou elemeto. Quando adicionamos uma margem a um elemento ele soma essa borda a seu tamanho, porem com border-box cria-se uma bordar no elemento e não adiciona a sua largura e altura.
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    max-width: 100vw;
+    width: 100%;
+    background-color: color.$colorBackground;
+}
+
+@mixin text($fontSize: 16px){
+    font-size: $fontSize;
+    line-height: calc($fontSize + 10px);
+    color: color.$colorText;
+}
+
+@mixin link($textSize: 16px){
+    @include text($textSize);
+    text-decoration: none;    
+}
+
+//config 
+.title__small{
+    @include text(28px);
+}
+
+.title__medium{
+    @include text(40px);
+}
+
+.title__big{
+    @include text(44px);
+}
+
+
+//config texts
+.text__small{
+    @include text(12px);
+}
+
+.text__medium{
+    @include text;
+}
+
+.text__big{
+    @include text(18px);
+}
+
+
+//config links
+.link__text__small{
+    @include link(12px);
+}
+
+.link__text__medium{
+    @include link;
+}
+
+.link__text__big{
+    @include link(18px)
+}
+
+.link__button{
+    background-color: transparent;
+    display: block;
+    width: 40px;
+    height: 20px;
+}
+
+.link__button--is--active{
+    background-color: color.$colorLinkbackgroundActive;
+}
+

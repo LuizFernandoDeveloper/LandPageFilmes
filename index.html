@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Open+Sans:ital,wght@0,500;0,600;1,400&family=Pacifico&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <title>Live Filmes</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container__logo">
+            <h1>Live Filme</h1>
+        </div>
+        <nav class="header__nav ">
+            <a href="#filmes"   class="header__nav__a header__nav__a--is--active" >Filmes</a>
+            <a href="#sinopse"  class="header__nav__a" >Sinopse</a>
+            <a href="#elenco"   class="header__nav__a" >Elenco</a>
+            <a href="#vozes"    class="header__nav__a" >Vozes</a>
+            <a href="#dublagem_brasileira" class="header__nav__a" >Dublagem</a>
+            <a href="#recepcao" class="header__nav__a" >Recepção</a>
+            <a href="#trilha_sonora" class="header__nav__a" >Trilha Sonora</a>
+        </nav>
+        <nav class="header__nav__mobile">
+            <button type="button" title="menu" onclick="menu()">
+                <img id="iconMenu" src="./dist/shared/image/icon/menu.svg" alt="icone do menu">
+            </button>
+        </nav>
+        <nav class="header__nav__mobile--is--closed" id="nav-mobile">
+            <a href="#filmes"   class="header__nav__a header__nav__a--is--active" >Filmes</a>
+            <a href="#sinopse"  class="header__nav__a" >Sinopse</a>
+            <a href="#elenco"   class="header__nav__a" >Elenco</a>
+            <a href="#vozes"    class="header__nav__a" >Vozes</a>
+            <a href="#dublagem_brasileira" class="header__nav__a" >Dublagem</a>
+            <a href="#recepcao" class="header__nav__a" >Recepção</a>
+            <a href="#trilha_sonora" class="header__nav__a" >Trilha Sonora</a>
+        </nav>
+    </header>
+    <script src="./src/scripts/js/main.js"></script>
+</body>
+</html>
