@@ -1,0 +1,17 @@
+.dublagem{
+    max-width: 100vw;
+    width: 100%;
+    margin-top: 20px;
+
+    &__container{
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+        ul{
+            margin-left: 35px;
+            li{
+                list-style-type: disc;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.trilha--sonora{
+    max-width: 100vw;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    &__container{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+
+        ol{
+            text-align: left;
+            padding-left: 35px;
+
+            li{
+                list-style-type: decimal;
+            }
+        }
+    }
+}

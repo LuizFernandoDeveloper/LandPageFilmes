@@ -1,0 +1,27 @@
+.elenco--vozes{
+    max-width: 100vw;
+    width: 100%;
+    margin-top: 30px;
+
+    &__container{
+        width: 80%;
+        display: flex;
+        margin:0 auto;
+
+        @media(max-width: 481px){
+            display: block;
+        }
+
+        &__elenco, &__vozes{
+            width: 50%;
+
+            ul{
+                margin-left: 35px;
+
+                li{
+                    list-style-type: disc;
+                }
+            }
+        }
+    }
+}

@@ -2,12 +2,22 @@
 @use 'config/color.scss';
 @use 'config/reset.scss';
 @use '_header';
+@use '_show__filmes';
+@use '_thumbnail';
+@use '_sinopse';
+@use '_elenco--vozes';
+@use '_dublagem';
+@use '_recepcao';
+@use '_trilha--sonora';
+@use '_footer';
+
 *{
     margin: 0;
     padding: 0;
     list-style-type:none;
     box-sizing: border-box; //propriedade responsavel por manter o tamanho da div ou elemeto. Quando adicionamos uma margem a um elemento ele soma essa borda a seu tamanho, porem com border-box cria-se uma bordar no elemento e não adiciona a sua largura e altura.
     font-family: 'Inter', sans-serif;
+    scroll-padding-top: 60px;
 }
 
 body{
@@ -20,6 +30,7 @@ body{
     font-size: $fontSize;
     line-height: calc($fontSize + 10px);
     color: color.$colorText;
+    font-family: 'Roboto', sans-serif;
 }
 
 @mixin link($textSize: 16px){
@@ -34,6 +45,10 @@ body{
 
 .title__medium{
     @include text(40px);
+
+    @media(max-width: 481px){
+        font-size: 30px;
+    }
 }
 
 .title__big{
@@ -78,4 +93,5 @@ body{
 .link__button--is--active{
     background-color: color.$colorLinkbackgroundActive;
 }
+
 

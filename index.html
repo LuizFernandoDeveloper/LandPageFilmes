@@ -16,29 +16,243 @@
             <h1>Live Filme</h1>
         </div>
         <nav class="header__nav ">
-            <a href="#filmes"   class="header__nav__a header__nav__a--is--active" >Filmes</a>
-            <a href="#sinopse"  class="header__nav__a" >Sinopse</a>
-            <a href="#elenco"   class="header__nav__a" >Elenco</a>
-            <a href="#vozes"    class="header__nav__a" >Vozes</a>
-            <a href="#dublagem_brasileira" class="header__nav__a" >Dublagem</a>
-            <a href="#recepcao" class="header__nav__a" >Recepção</a>
-            <a href="#trilha_sonora" class="header__nav__a" >Trilha Sonora</a>
+            <a data-link-button-a href="#movies"   class="header__nav__a" >Filmes</a>
+            <a data-link-button-a href="#sinopse"  class="header__nav__a" >Sinopse</a>
+            <a data-link-button-a href="#elenco"   class="header__nav__a" >Elenco</a>
+            <a data-link-button-a href="#vozes"    class="header__nav__a" >Vozes</a>
+            <a data-link-button-a href="#dublagem_brasileira" class="header__nav__a" >Dublagem</a>
+            <a data-link-button-a href="#recepcao" class="header__nav__a" >Recepção</a>
+            <a data-link-button-a href="#trilha_sonora" class="header__nav__a" >Trilha Sonora</a>
         </nav>
         <nav class="header__nav__mobile">
             <button type="button" title="menu" onclick="menu()">
-                <img id="iconMenu" src="./dist/shared/image/icon/menu.svg" alt="icone do menu">
+                <img id="iconMenu" src="./dist/shared/images/icon/menu.svg" alt="icone do menu">
             </button>
         </nav>
         <nav class="header__nav__mobile--is--closed" id="nav-mobile">
-            <a href="#filmes"   class="header__nav__a header__nav__a--is--active" >Filmes</a>
-            <a href="#sinopse"  class="header__nav__a" >Sinopse</a>
-            <a href="#elenco"   class="header__nav__a" >Elenco</a>
-            <a href="#vozes"    class="header__nav__a" >Vozes</a>
-            <a href="#dublagem_brasileira" class="header__nav__a" >Dublagem</a>
-            <a href="#recepcao" class="header__nav__a" >Recepção</a>
-            <a href="#trilha_sonora" class="header__nav__a" >Trilha Sonora</a>
+            <a data-link-button-a href="#movies"      class="header__nav__a header__nav__a--is--active" >Filmes</a>
+            <a data-link-button-a href="#sinopse"  class="header__nav__a" >Sinopse</a>
+            <a data-link-button-a href="#elenco"   class="header__nav__a" >Elenco</a>
+            <a data-link-button-a href="#vozes"    class="header__nav__a" >Vozes</a>
+            <a data-link-button-a href="#dublagem_brasileira" class="header__nav__a" >Dublagem</a>
+            <a data-link-button-a href="#recepcao" class="header__nav__a" >Recepção</a>
+            <a data-link-button-a href="#trilha_sonora" class="header__nav__a" >Trilha Sonora</a>
         </nav>
     </header>
+
+    <section class="thumbnail">
+
+        <div class="thumbnail__container">
+            <img src="./dist/shared/images/transformers-movie-fanart-fanart-16.png" alt="transformes">
+        </div>
+
+    </section>
+
+    <section class="show__filmes" id="movies">
+        
+        <div class="show__filmes__navigation">
+
+            <button onclick="buttonSectionShowFilmes('em-breve')" id="em-breve"  class="button" type="button" title="Em Breve">Em Breve</button>
+            <button onclick="buttonSectionShowFilmes('ja-lacados')" id="ja-lacados"  class="button button--is--active" type="button" title="Em Breve">Já Lançados</button>
+
+        </div>
+        <div class="show__filmes__container">
+
+            <div class="show__filmes__container__item">
+                <img src="./dist/shared/images/transformes-1.jpg" alt=" transformes-1">
+            </div>
+
+            <div class="show__filmes__container__item">
+                <img src="./dist/shared/images/transformers-2-revenge-of-the-falen.jpg" alt="transformers 2 revenge of the falen">
+            </div>
+
+            <div class="show__filmes__container__item">
+                <img src="./dist/shared/images/Transformers-O-Lado-culto-da-Lua.jpg" alt="Transformers O Lado culto da Lua">
+            </div>
+
+            <div class="show__filmes__container__item">
+                <img src="./dist/shared/images/Transformers-Age-of-Extinction.jpg" alt="Transformers Age of Extinction">
+            </div>
+
+            <div class="show__filmes__container__item">
+                <img src="./dist/shared/images/Transformers-The-Last-Knight.jpg" alt="Transformers The Last Knight">
+            </div>
+
+            <div class="show__filmes__container__item">
+                <img src="./dist/shared/images/bumvlebee.jpg" alt="bumvlebee">
+            </div>
+
+        </div>
+
+    </section> 
+
+    <section class="sinopse" id="sinopse">
+        <div class="sinopse__container">
+            <h1 class="title__medium">Sinopse</h1>
+            <p class="text__medium">
+                Os Transformers — alienígenas gigantes que vivem na Terra camuflados sob a forma de carros,
+                aviões e aparelhos eletrônicos —, batalham por uma fonte de energia escondida em nosso planeta:
+                são os cruéis Decepticons, determinados a dominar o Universo, contra os pacíficos Autobots. 
+                Enquanto isso, os adolescentes Sam e Mikaela vivem tranquilamente sua vida sem saber que a fonte tão cobiçada pelos alienígenas está com eles.
+            </p>
+        </div>
+    </section>
+
+    <section class="elenco--vozes" id="elenco--vozes">
+        <div class="elenco--vozes__container">
+            <div class="elenco--vozes__container__elenco" id="elenco">
+                <h2 class="title__small">Elenco</h2>
+                <ul class="text__medium">
+                    <li>
+                        Shia LaBeouf - Sam Witwicky
+                    </li>
+                    <li>
+                        Megan Fox - Mikaela Banes
+                    </li>
+                    <li>
+                        Josh Duhamel - Capt. William Lennox
+                    </li>
+                    <li> 
+                        Jon Voight - John Keller, Secretário de Defesa
+                    </li>
+                    <li>
+                        Tyrese Gibson - Sgto. Epps
+                    </li>
+                    <li>
+                        John Turturro - Seymour Simmons
+                    </li>
+                    <li>
+                        Rachael Taylor - Maggie Madsen
+                    </li>
+                    <li>
+                        Anthony Anderson - Glenn
+                    </li>
+                    <li>
+                        John Robinson - Miles
+                    </li>
+                    <li>
+                        Bernie Mac - Bobby Bolivia
+                    </li>                
+                </ul>
+            </div>
+            <div class="elenco--vozes__container__vozes" id="vozes">
+                <h2 class="title__small">Vozes</h2>
+                <ul class="text__medium">
+                    <li>
+                        Optimus Prime .... Peter Cullen
+                    </li>
+                    <li>
+                        Bumblebee .... Mark Ryan
+                    </li>
+                    <li>
+                        Jazz .... Darius McCrary
+                    </li>
+                    <li> 
+                        Ironhide .... Jess Harnell
+                    </li>
+                    <li>
+                        Ratchet .... Robert Foxworth
+                    </li>
+                    <li>
+                        Megatron .... Hugo Weaving
+                    </li>
+                    <li>
+                        Starscream .... Charlie Adler
+                    </li>
+                    <li>
+                        Barricade .... Jess Harnell
+                    </li>
+                    <li>
+                        Frenzy .... Reno Wilson
+                    </li>
+                    <li>
+                        Brawl .... David Sobolov
+                    </li> 
+                    <li>
+                        Bonecrusher .... Jimmie Wood
+                    </li>               
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="dublagem" id="dublagem_brasileira">
+        <div class="dublagem__container">
+            <h2 class="title__medium">Dublagem Brasileira</h2>
+            <ul class="text__medium">
+                <li>
+                    Estúdio de dublagem: Delart
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="recepcao" id="recepcao">
+        <div class="recepcao__container">
+            <h2 class="title__medium" >Recepção</h2>
+            <p class="text__medium">
+                Transformers foi bem nas bilheterias, 
+                com receita de mais de 300 000 000 de dólares estadunidenses nos Estados Unidos e de mais de 700 000 000 de dólares estadunidenses mundialmente.
+                No Brasil, atraiu mais de 1 900 000 espectadores.
+                As críticas, no geral, foram mistas. 
+                Com ressalvas para o roteiro em geral, principalmente as tramas humanas. 
+                Com o tomatometer de 57% em base de 219 críticas, o Rotten Tomatoes publicou um consenso: 
+                "Enquanto personagens verossímeis são difíceis de encontrar em Transformers, 
+                os efeitos são surpreendentes e a ação é emocionante".
+            </p>
+        </div>
+    </section>
+
+    <section class="trilha--sonora" id="trilha_sonora">
+        <div class="trilha--sonora__container">
+            <h2 class="title__medium">Trilha Sonora</h2>
+            <ol class="text__big">
+                <li>
+                    Linkin Park - What I've Done
+                </li>
+                <li>
+                    Smashing Pumpkins - Doomsday Clock
+                </li>
+                <li>
+                    Disturbed - This Moment
+                </li>
+                <li>
+                    Goo Goo Dolls- Before It’s Too Late (tema de Sam e Mikaela)
+                </li>
+                <li>
+                    The Used - Pretty Handsome Awkward
+                </li>
+                <li>
+                    HIM - Passion’s Killing Floor
+                </li>
+                <li>
+                    Taking Back Sunday - What It Feels Like To Be A Ghost?
+                </li>
+                <li>
+                    Styles Of Beyond - Second To None
+                </li>
+                <li>
+                    Breaking Benjamin - Follow
+                </li>
+                <li>
+                    Armor For Sleep - End Of The World
+                </li>
+                <li>
+                    Idiot Pilot - Retina and the Sky
+                </li>
+                <li>
+                    Julien-K - Technical Difficulties
+                </li>
+                <li>
+                    Mute Math - Transformers Theme
+                </li>
+            </ol>
+        </div>
+    </section>
+    <hr>
+    <footer class="footer">
+        <h1>Live Filme</h1>
+    </footer>
     <script src="./src/scripts/js/main.js"></script>
 </body>
 </html>
